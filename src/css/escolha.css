@@ -1,0 +1,99 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --hue-neutral: 200;
+  --hue-wrong: 0;
+  --hue-correct: 145;
+}
+
+.container {
+  position: relative;
+  width: 40vw;
+  background-color: #c0d88c;
+  border-radius: 5px;
+  padding: 0.75vw;
+  box-shadow: 0 0 10px 2px;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  margin-top: 24vw;
+  height: 30vh;
+  
+}
+
+.container.correct {
+  background-color: #87a93e;
+}
+
+.container.wrong {
+  background-color: #d15252;
+}
+
+.btn-grid {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.btn {
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding: 5px 10px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #769437;
+  transition: .3s;
+}
+
+.btn:hover {
+  transform: scale(1.02);
+}
+
+.btn.correct {
+  background-color: #9dc547; /* Cor verde para resposta correta */
+  color: white;
+}
+
+.btn.wrong {
+  background-color: #e95252; /* Cor vermelha para resposta errada */
+  color: white;
+}
+
+.btn img {
+  max-width: 18vw;
+  max-height: 18vw;
+  height: auto;
+  display: block;
+  margin: 1vw;
+}
+
+.start-btn,
+.next-btn {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 10px 20px;
+}
+
+.controls {
+  margin-top: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hide {
+  display: none;
+}

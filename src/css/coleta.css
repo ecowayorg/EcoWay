@@ -1,0 +1,126 @@
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); 
+    width: 60vw;
+    background-color: none;
+}
+
+.modal-content {
+    background-color: #eaffee;
+    margin: 0;
+    padding: 20px;
+    border: 8px solid #88a351;
+    width: 100%;
+    text-align: left;
+    color: #545454;
+    box-sizing: border-box; 
+    border-radius: 30px;
+}
+
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.close:hover, .close:focus {
+    color: black;
+}
+
+
+
+#instrucoes-btn {
+    background-color: #88a351;
+    color: white;
+    padding: 1vw 1vw;
+    cursor: pointer;
+    border-radius: 30px;
+    font-size: 1.5vw;
+    width: 6vw;
+    border: none;
+    transition: opacity 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 1vw;
+}
+
+#instrucoes-btn:hover {
+    opacity: 0.8;
+}
+
+
+/* Área do jogo */
+.game-area {
+    position: relative;
+    width: 76vw;
+    justify-content: center;
+    align-items: center;
+    margin-top: 14vw;
+    margin-left: 12vw;
+    background-image: url("../img/fundo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.lixeiras {
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+    gap: 0.2vw; 
+    max-width: 92vw; 
+    flex-wrap: wrap; 
+}
+.lixos {
+    display: flex;
+    justify-content: center;
+    margin: 2vw;
+    gap: none; 
+    max-width: 92vw; 
+    flex-wrap: wrap; 
+    padding-bottom: 5vw;
+}
+
+.lixo.dragging {
+    opacity: 1 
+}
+
+/* Estilo das lixeiras */
+.lixeira img {
+    height: 10vw;
+    margin: 0 0.5vw;
+}
+
+/* Estilo dos lixos */
+.lixo img {
+    height: 5vw; 
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Espaçamento entre lixeiras e lixos */
+.lixeiras {
+    margin-bottom: 5vw;
+}
+
+/* Estilo de lista e texto */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+strong {
+    color: #734e49;
+}

@@ -1,0 +1,213 @@
+@media only screen and (max-width: 414px) and (max-height: 896px) {
+    .headerContainer:nth-child(2) {
+        display: none;
+    }
+
+    header {
+        width: auto;
+    }
+
+
+    .toolbar {
+        height: 70px;
+
+        .headerContainer:nth-child(1) {
+            width: 100%;
+
+            .logoImg {
+                width: 50px;
+            }
+
+            h1 {
+                font-size: 35px;
+            }
+
+            .headerItem {
+                margin-left: 0;
+            }
+
+        }
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    main {
+        #mainImg {
+            display: none !important;
+        }
+
+        #mainImg2 {
+            display: flex !important;
+
+            margin: 0 auto;
+            margin-top: 130px;
+            border-radius: 10px;
+            width: 100%;
+        }
+    }
+
+    .scroll-arrow {
+        bottom: 45px; 
+
+        img {
+            width: 90px;
+        }
+    }
+
+
+    .highlights {
+
+
+        .buttonMore {
+            margin-top: 10px;
+
+            #more {
+                padding: 4px 15px 4px 15px;
+
+                a {
+                    font-size: 25px;
+                }
+            }
+        }
+
+        .newsbtn {
+            margin-top: 0;
+        }
+
+        .containerNews {
+
+            #controls {
+                visibility: hidden;
+            }
+
+            #bullets {
+                margin-top: 200px;
+                gap: 10px;
+            }
+
+            #bullets label {
+                width: 15px;
+                height: 15px;
+            }
+
+            #slider {
+                height: 370px;
+            }
+
+            .slide {
+                height: 250px !important;
+            }
+
+            #slides {
+                max-width: calc(100% - 40px);
+                height: 250px !important;
+                padding: 0;
+            }
+
+            #overflow {
+                height: 270px;
+            }
+
+            .newsTitle {
+                margin-top: 10px;
+            }
+
+        }
+
+        .title {
+            width: 100%;
+
+            h2 {
+                font-size: 40px;
+            }
+        }
+
+
+
+        .icon {
+            width: 100px !important;
+        }
+
+        h3 {
+            font-size: 35px !important;
+            text-align: center;
+        }
+
+        .slide-content {
+            line-height: 25px;
+
+            h2 {
+                font-size: 20px;
+            }
+        }
+
+        #slides {
+            max-width: none !important;
+        }
+
+    }
+
+    .breaker {
+        margin: auto !important;
+        width: 94% !important;
+    }
+
+    .containerGames {
+        .gamesRow {
+            .gamecard {
+                margin: 0 !important;
+
+                .descriptionGame {
+                    margin-bottom: 70px !important;
+                }
+
+                img {
+                    width: 300px !important;
+                    height: 320px !important;
+                }
+
+                h3 {
+                    font-size: 25px !important;
+                }
+            }
+        }
+    }
+
+
+    body {
+        margin: 10px;
+    }
+
+
+    footer {
+        height: fit-content;
+        margin-top: 60px;
+
+        .footerContent {
+            text-align: center;
+        }
+
+        .footerItem {
+            width: 250px;
+        }
+
+        .containerFooter {
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .lowfooter {
+            flex-direction: column;
+            gap: 50px;
+
+            img {
+                width: 200px;
+            }
+        }
+    }
+
+
+
+}

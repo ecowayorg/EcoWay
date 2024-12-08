@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eco Way | Jogo da Cobrinha</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/body.css" />
+    <link rel="stylesheet" href="css/button.css" />
+    <link rel="stylesheet" href="css/main-homepage.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/news-carousel.css">
+    <link rel="stylesheet" href="css/news.css">
+    <link rel="stylesheet" href="css/snake.css">
+    <link rel="shortcut icon" href="img/logo.svg" type="" />
+</head>
+<body>
+    <header>
+        <nav class="toolbar">
+          <div class="headerContainer">
+            <a href="../index.html" id="logo" class="headerItem">
+              <img src="img/logo.svg" class="logoImg" />
+              <h1>Eco Way</h1>
+            </a>
+          </div>
+    
+          <div class="headerContainer">
+            <a href="noticias.html" class="headerItem">
+              <h2 class="mainToolbar">NOTÍCIAS</h2>
+            </a>
+            <a href="jogos.html" class="headerItem">
+              <h2 class="mainToolbar">JOGOS</h2>
+            </a>
+            <button class="learnMore">
+              <a href="sobreNos.html">SOBRE NÓS</a>
+            </button>
+          </div>
+        </nav>
+      </header>
+
+    <div class="container noselect">
+            <div id="author">
+                <h1>Jogo da cobrinha</h1>
+            </div>
+        <div id="canvas"></div>
+            <div id="ui">
+                <h2>Pontuação</h2>
+                <br>
+                <span id="score">00</span>
+            </div>
+        <button id="replay">
+            <i class="fas fa-play"></i>
+            RECOMEÇAR
+        </button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footerContent">
+          <div class="containerFooter">
+            <div class="description">
+              <h2>Eco Way</h2>
+              <p>
+                Encoraje e transforme: juntos, podemos construir um caminho rumo a
+                um futuro mais sustentável!
+              </p>
+            </div>
+    
+            <div class="footerItem">
+              <h2>EXPLORE</h2>
+              <a href="../index.html">Página inicial</a>
+              <a href="noticias.html">Notícias</a>
+              <a href="jogos.html">Jogos</a>
+              <a href="sobreNos.html">Sobre nós</a>
+            </div>
+    
+            <div class="footerItem">
+              <h2>VISITE</h2>
+              <p>
+                Av. Bahia, 1739 <br />Indaiá, Caraguatatuba - SP <br />
+                11665-310
+              </p>
+            </div>
+    
+            <div class="footerItem">
+              <h2>CONTATE</h2>
+              <a href="https://www.instagram.com/ecowayorg/" target="_blank">Instagram</a>
+              <a href="https://bsky.app/profile/ecoway.bsky.social"  target="_blank">Bluesky</a>
+              <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ecoway.organization@gmail.com"  target="_blank">Email</a>
+            </div>
+    
+            <div class="footerItem">
+              <h2>LEGAL</h2>
+              <a href="privacidade.html">Política de privacidade</a>
+              <a href="termos.html">Termos de serviço</a>
+            </div>
+          </div>
+    
+          <div class="lowfooter">
+            <div>
+              <p id="copyright">
+                EcoWay &copy; 2024 - Todos os direitos reservados
+              </p>
+            </div>
+            <div>
+              <img src="img/lixos.png" class="img" width="350px" />
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <script src="js/script-snake.js" defer></script>
+</body>
+</html>

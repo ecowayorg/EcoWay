@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eco Way | Coleta</title>
+
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/header.css" />
+  <link rel="stylesheet" href="css/body.css" />
+  <link rel="stylesheet" href="css/button.css" />
+  <link rel="stylesheet" href="css/footer.css" />
+  <link rel="stylesheet" href="css/coleta.css">
+
+  <link rel="shortcut icon" href="img/logo.svg" type="" />
+</head>
+
+
+
+<body id="start">
+
+  <!-- HEADER -->
+
+  <header>
+    <nav class="toolbar">
+      <div class="headerContainer">
+         <a href="../index.html" id="logo" class="headerItem">
+          <img src="img/logo.svg" class="logoImg" />
+          <h1>Eco Way</h1>
+        </a>
+      </div>
+
+      <div class="headerContainer">
+        <a href="noticias.html" class="headerItem">
+          <h2 class="mainToolbar">NOTÍCIAS</h2>
+        </a>
+        <a href="jogos.html" class="headerItem">
+          <h2 class="mainToolbar">JOGOS</h2>
+        </a>
+        <button class="learnMore">
+          <a href="sobreNos.html">SOBRE NÓS</a>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+
+  <!-- MAIN -->
+
+  <main>
+
+  <div id="instrucoes-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Como jogar?</h2>
+      <br>
+      <p>Instruções:</p>
+      <br>
+      <ul>
+        <li><strong>Lixeira Azul</strong> - Papel</li>
+        <li><strong>Lixeira Vermelha</strong> - Plástico</li>
+        <li><strong>Lixeira Verde</strong> - Vidro</li>
+        <li><strong>Lixeira Amarela</strong> - Metal</li>
+        <li><strong>Lixeira Marrom</strong> - Orgânico</li>
+        <li><strong>Lixeira Cinza/Preta</strong> - Eletrônico</li>
+        <br>
+        <p>Arraste o lixo para a lixeira correspondente!</p>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Modal de Resultado -->
+  <div id="resultado-modal" class="modal">
+      <div class="modal-content">
+          <span class="close" id="close-resultado">&times;</span>
+          <h2 id="resultado-titulo">Resultado</h2>
+          <p id="resultado-mensagem"></p>
+      </div>
+  </div>
+
+  <div class="game-area">
+    <button id="instrucoes-btn"> ? </button>
+    <div class="lixeiras">
+        <div id="lixeira-papel" class="lixeira" data-tipo="papel">
+            <img src="img/lixeira_papel.png" alt="Lixeira de Papel">
+        </div>
+        <div id="lixeira-plastico" class="lixeira" data-tipo="plastico">
+            <img src="img/lixeira_plastico.png" alt="Lixeira de Plástico">
+        </div>
+        <div id="lixeira-vidro" class="lixeira" data-tipo="vidro">
+            <img src="img/lixeira_vidro.png" alt="Lixeira de Vidro">
+        </div>
+        <div id="lixeira-metal" class="lixeira" data-tipo="metal">
+            <img src="img/lixeira_metal.png" alt="Lixeira de Metal">
+        </div>
+        <div id="lixeira-organico" class="lixeira" data-tipo="organico">
+            <img src="img/lixeira_organico.png" alt="Lixeira Orgânico">
+        </div>
+        <div id="lixeira-eletronico" class="lixeira" data-tipo="eletronico">
+            <img src="img/lixeira_eletronico.png" alt="Lixeira Eletrônico">
+        </div>
+    </div>
+
+    <div class="lixos">
+        <div id="lixo-papel1" class="lixo" draggable="true" data-tipo="papel">
+            <img src="img/lixo_papel1.png" alt="Jornal">
+        </div>
+        <div id="lixo-plastico1" class="lixo" draggable="true" data-tipo="plastico">
+            <img src="img/lixo_plastico2.png" alt="Garrafa PET">
+        </div>
+        <div id="lixo-vidro1" class="lixo" draggable="true" data-tipo="vidro">
+            <img src="img/lixo_vidro1.png" alt="Garrafa de Vidro">
+        </div>
+        <div id="lixo-plastico2" class="lixo" draggable="true" data-tipo="plastico">
+            <img src="img/lixo_plastico1.png" alt="Sacola">
+        </div>
+        <div id="lixo-metal2" class="lixo" draggable="true" data-tipo="metal">
+            <img src="img/lixo_metal2.png" alt="Ferragem">
+        </div>
+        <div id="lixo-vidro2" class="lixo" draggable="true" data-tipo="vidro">
+            <img src="img/lixo_vidro2.png" alt="Copo de Vidro">
+        </div>
+        <div id="lixo-metal1" class="lixo" draggable="true" data-tipo="metal">
+            <img src="img/lixo_metal1.png" alt="Lata de Alumínio">
+        </div>
+        <div id="lixo-organico1" class="lixo" draggable="true" data-tipo="organico">
+            <img src="img/lixo_organico1.png" alt="Cascas de Frutas">
+        </div>
+        <div id="lixo-eletronico2" class="lixo" draggable="true" data-tipo="eletronico">
+            <img src="img/lixo_eletronico2.png" alt="Celular Velho">
+        </div>
+        <div id="lixo-papel2" class="lixo" draggable="true" data-tipo="papel">
+            <img src="img/lixo_papel2.png" alt="Caderno">
+        </div>
+        <div id="lixo-organico2" class="lixo" draggable="true" data-tipo="organico">
+            <img src="img/lixo_organico2.png" alt="Restos de Comida">
+        </div>
+        <div id="lixo-eletronico1" class="lixo" draggable="true" data-tipo="eletronico">
+            <img src="img/lixo_eletronico1.png" alt="Bateria">
+        </div>
+        
+    </div>
+  </div>
+
+  </main>
+
+
+
+  <!-- FOOTER -->
+
+  <footer>
+    <div class="footerContent">
+      <div class="containerFooter">
+        <div class="description">
+          <h2>Eco Way</h2>
+          <p>
+            Encoraje e transforme: juntos, podemos construir um caminho rumo a
+            um futuro mais sustentável!
+          </p>
+        </div>
+
+        <div class="footerItem">
+          <h2>EXPLORE</h2>
+          <a href="../index.html">Página inicial</a>
+          <a href="noticias.html">Notícias</a>
+          <a href="jogos.html">Jogos</a>
+          <a href="sobreNos.html">Sobre nós</a>
+        </div>
+
+        <div class="footerItem">
+          <h2>VISITE</h2>
+          <p>
+            Av. Bahia, 1739 <br />Indaiá, Caraguatatuba - SP <br />
+            11665-310
+          </p>
+        </div>
+
+        <div class="footerItem">
+          <h2>CONTATE</h2>
+          <a href="https://www.instagram.com/ecowayorg/" target="_blank">Instagram</a>
+          <a href="https://bsky.app/profile/ecoway.bsky.social">Bluesky</a>
+        </div>
+
+        <div class="footerItem">
+          <h2>LEGAL</h2>
+          <a href="privacidade.html">Política de privacidade</a>
+          <a href="termos.html">Termos de serviço</a>
+        </div>
+      </div>
+
+      <div class="lowfooter">
+        <div>
+          <p id="copyright">
+            EcoWay &copy; 2024 - Todos os direitos reservados
+          </p>
+        </div>
+        <div>
+          <img src="img/lixos.png" class="img" width="350px" />
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+</body>
+
+<script src="js/script-coleta.js"></script>
+
+</html>

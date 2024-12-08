@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eco Way</title>
+
+  <link rel="stylesheet" href="src/css/reset.css" />
+  <link rel="stylesheet" href="src/css/header.css" />
+  <link rel="stylesheet" href="src/css/body.css" />
+  <link rel="stylesheet" href="src/css/button.css" />
+  <link rel="stylesheet" href="src/css/main-homepage.css" />
+  <link rel="stylesheet" href="src/css/footer.css" />
+  <link rel="stylesheet" href="src/css/news-carousel.css">
+  <link rel="stylesheet" href="src/css/news.css">
+  <link rel="stylesheet" href="src/css/mediaQuery.css">
+
+  <link rel="shortcut icon" href="src/img/logo.svg" type="image/svg+xml" />
+</head>
+
+
+
+<body id="start">
+
+  <!-- HEADER -->
+
+  <header>
+    <nav class="toolbar">
+      <div class="headerContainer">
+        <a href="#" id="logo" class="headerItem">
+          <img src="src/img/logo.svg" class="logoImg" />
+          <h1>Eco Way</h1>
+        </a>
+      </div>
+
+      <div class="headerContainer">
+        <a href="src/noticias.html" class="headerItem">
+          <h2 class="mainToolbar">NOTÍCIAS</h2>
+        </a>
+        <a href="src/jogos.html" class="headerItem">
+          <h2 class="mainToolbar">JOGOS</h2>
+        </a>
+        <button class="learnMore">
+          <a href="src/sobreNos.html">SOBRE NÓS</a>
+        </button>
+      </div>
+
+      <!-- Botão do Menu Hambúrguer -->
+      <div class="menu-container" style="display: none;">
+        <button id="menuButton" class="hamburger" style="display: none;">
+          ☰
+        </button>
+      </div>
+    </nav>
+
+    <div id="menuOverlay" class="menu-overlay"></div>
+
+    <!-- Menu Responsivo -->
+    <div id="sideMenu" class="side-menu">
+      <button id="closeMenu" class="close-button">✖</button>
+      <div class="menu-links">
+        <a href="src/noticias.html">NOTÍCIAS</a>
+        <a href="src/jogos.html">JOGOS</a>
+        <a href="src/sobreNos.html">SOBRE NÓS</a>
+        <a href="src/privacidade.html">POLÍTICA DE PRIVACIDADE</a>
+        <a href="src/termos.html">TERMOS DE SERVIÇO</a>
+      </div>
+
+      <div class="bins">
+        <img src="src/img/lixos.png" class="img" width="350px" />
+      </div>
+    </div>
+
+  </header>
+
+
+
+  <!-- MAIN -->
+
+  <main>
+    <img src="src/img/main-img.png" id="mainImg" id="img">
+    <img src="src/img/main-img-phone.png" id="mainImg2" style="display: none;">
+
+    <div class="scroll-arrow">
+      <a href="#highlight">
+        <img src="src/img/scroll-arrow.png" alt="Seta para baixo">
+      </a>
+    </div>
+
+    <div class="highlights" id="highlight">
+      <div class="title">
+        <h2>DESTAQUES</h2>
+      </div>
+
+
+      <div class="containerNews">
+
+        <div class="newsTitle">
+          <img class="icon" src="src/img/journalist.png" alt="jornalista">
+          <h3>NOTÍCIAS</h3>
+        </div> <!-- .newsTitle -->
+
+
+        <div id="slider">
+          <input type="radio" name="slider" id="slide1" checked>
+          <input type="radio" name="slider" id="slide2">
+          <input type="radio" name="slider" id="slide3">
+          <input type="radio" name="slider" id="slide4">
+          <div id="slides">
+            <div id="overflow">
+              <div class="inner">
+                <div class="slide slide_1">
+                  <a href="src/news/new4.html"> 
+                      <img src="src/img/new4/img1.webp" alt="Descrição do Slide">
+                      <div class="slide-content">
+                          <h2>Adeus, plástico. Aprenda a reduzir seu uso e cuidar do planeta.</h2>
+                          <p>03 de Dez de 2024</p>
+                      </div>
+                  </a>
+              </div>
+              <div class="slide slide_2">
+                  <a href="src/news/new1.html"> 
+                      <img src="src/img/new1/img1.png" alt="Descrição do Slide">
+                      <div class="slide-content">
+                          <h2>Garrafas pláticas são transformadas em fonte de energia verde nos EUA</h2>
+                          <p>23 de Nov. de 2024
+                          </p>
+                      </div>
+                  </a>
+              </div>
+              <div class="slide slide_3">
+                  <a href="src/news/new5.html">
+                      <img src="src/img/new5/img1.jpg" alt="Descrição do Slide">
+                      <div class="slide-content">
+                          <h2>O jogo da reciclagem ou como conscientizar as crianças
+                          </h2>
+                          <p>24 de Set de 2024
+                          </p>
+                      </div>
+                  </a>
+              </div>
+              <div class="slide slide_4">
+                  <a href="src/news/new6.html">
+                      <img src="src/img/new6/img1.webp" alt="Descrição do Slide">
+                      <div class="slide-content">
+                          <h2>Transformar e reutilizar: descubra o mundo da reciclagem.
+                          </h2>
+                          <p>06 de Ago de 2024
+                          </p>
+                      </div>
+                  </a>
+              </div>
+              
+              </div>
+            </div>
+          </div>
+          <div id="controls">
+            <label for="slide1"></label>
+            <label for="slide2"></label>
+            <label for="slide3"></label>
+            <label for="slide4"></label>
+          </div>
+
+          <div id="bullets">
+            <label for="slide1"></label>
+            <label for="slide2"></label>
+            <label for="slide3"></label>
+            <label for="slide4"></label>
+          </div>
+        </div> <!-- slider -->
+
+        <div class="buttonMore newsbtn">
+          <button id="more">
+            <a href="src/noticias.html">MAIS NOTÍCIAS</a>
+          </button>
+        </div>
+
+      </div> <!-- containerNews -->
+
+      <div class="breaker"></div>
+
+      <div class="containerGames">
+
+        <div class="gamesTitle">
+          <img class="icon" src="src/img/gamer.png">
+          <h3>JOGOS</h3>
+        </div>
+
+        <div class="games">
+
+          <div class="gamesRow">
+            <div class="gamecard">
+              <a href="src/coleta.html"
+                class="gamecard">
+                <img src="src/img/jogo-coleta.png"
+                  alt="">
+              </a>
+              <h3>Coleta seletiva</h3>
+              <div class="descriptionGame">
+                <p>Aprenda a reciclar agora mesmo!</p>
+              </div>
+            </div>
+
+            <div class="gamecard">
+              <a href="src/memoria.html"
+                class="gamecard">
+                <img src="src/img/jogo-memoria.png"
+                  alt="">
+              </a>
+              <h3>Jogo da memória</h3>
+              <div class="descriptionGame">
+                <p>Treine sua mente, desafie sua memória!</p>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="buttonMore">
+            <button id="more">
+              <a href="src/jogos.html">MAIS JOGOS</a>
+            </button>
+          </div>
+
+        </div> <!-- containerGames -->
+
+      </div>
+  </main>
+
+
+
+
+  <!-- FOOTER -->
+
+  <footer>
+    <div class="footerContent">
+      <div class="containerFooter">
+        <div class="description">
+          <h2>Eco Way</h2>
+          <p>
+            Encoraje e transforme: juntos, podemos construir um caminho rumo a
+            um futuro mais sustentável!
+          </p>
+        </div>
+
+        <div class="footerItem">
+          <h2>EXPLORE</h2>
+          <a href="#">Página inicial</a>
+          <a href="src/noticias.html">Notícias</a>
+          <a href="src/jogos.html">Jogos</a>
+          <a href="src/sobreNos.html">Sobre nós</a>
+        </div>
+
+        <div class="footerItem">
+          <h2>VISITE</h2>
+          <p>
+            Av. Bahia, 1739 <br />Indaiá, Caraguatatuba - SP <br />
+            11665-310
+          </p>
+        </div>
+
+        <div class="footerItem">
+          <h2>CONTATE</h2>
+          <a href="https://www.instagram.com/ecowayorg/" target="_blank">Instagram</a>
+          <a href="https://bsky.app/profile/ecoway.bsky.social" target="_blank">Bluesky</a>
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ecoway.organization@gmail.com"
+            target="_blank">Email</a>
+        </div>
+
+        <div class="footerItem">
+          <h2>LEGAL</h2>
+          <a href="src/privacidade.html">Política de privacidade</a>
+          <a href="src/termos.html">Termos de serviço</a>
+        </div>
+      </div>
+
+      <div class="lowfooter">
+        <div>
+          <p id="copyright">
+            EcoWay &copy; 2024 - Todos os direitos reservados
+          </p>
+        </div>
+        <div>
+          <img src="src/img/lixos.png" class="img" width="350px" />
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="src/js/scroll-arrow.js"></script>
+  <script src="src/js/menu.js"></script>
+  
+</body>
+
+</html>

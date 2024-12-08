@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+footer {
+    background-color: #adcf68;
+    border-radius: 10px;
+    padding: 20px;
+    height: fit-content;
+    color: white;
+    /* margin-left: 100px; */
+    /* margin-right: 100px; */
+
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 130px;
+    margin-bottom: 10px;
+
+
+    h2 {
+        font-family: 'Poppins', sans-serif;
+        margin-bottom: 10px;
+    }
+}
+
+.description {
+    font-family: 'Poppins', sans-serif;
+    width: 250px;
+    font-weight: normal;
+
+    h2 {
+        font-size: 30px;
+        font-weight: 700;
+        margin-bottom: 15px;
+    }
+
+    p {
+        letter-spacing: 2px;
+        font-size: 17px;
+        line-height: 30px;
+    }
+}
+
+.footerContent {
+    padding-left: 30px;
+    padding-right: 30px;
+
+    #copyright {
+        padding-top: 80px;
+    }
+}
+
+.containerFooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* tirar esse justify no media queries */
+    flex-wrap: wrap;
+    padding-top: 30px;
+    gap: 10px;
+
+}
+
+.footerItem {
+    display: flex;
+    flex-direction: column;
+    /* width: 250px; (colocar no media queries)*/
+    min-width: 200px;
+
+
+    a,
+    p {
+        line-height: 40px;
+        font-family: 'Inter';
+    }
+
+    h2 {
+        letter-spacing: 4px;
+        line-height: 30px;
+        font-size: large;
+        font-weight: 450;
+        justify-content: center;
+        font-weight: bold;
+    }
+}
+
+
+footer a {
+    color: white;
+    transition: .3s;
+}
+
+footer a:hover {
+    transform: scale(1.07);
+}
+
+.lowfooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    img {
+        width: 250px;
+    }
+}
